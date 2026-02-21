@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:testapp/call_api_screen.dart';
+import 'package:testapp/aqi_screen.dart';
+import 'firebase_options.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -11,13 +18,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter First Project',
-      debugShowCheckedModeBanner: false,
+      title: 'Flutter',
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
         useMaterial3: true,
       ),
-      home: CallApiScreen()
+      home: AqiScreen(),
     );
   }
 }

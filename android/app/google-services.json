@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "929318443424",
+    "project_id": "nosql-db-mobileapp",
+    "storage_bucket": "nosql-db-mobileapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929318443424:android:683c565d08d0e03b236cc5",
+        "android_client_info": {
+          "package_name": "com.example.testapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCESoXFMyAlzZb74PzOldmDwO6TOaKqO5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
